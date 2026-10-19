@@ -39,7 +39,7 @@ def ray_color(ray: Ray, world, depth: int, rng: random.Random) -> Vec3:
 
 def _render_row(args) -> tuple:
     y, width, height, spp, max_depth, seed, world, camera = args
-    rng = random.Random((seed, y))
+    rng = random.Random(seed * 100003 + y)
     get_ray = camera.get_ray
     row = []
     for x in range(width):
