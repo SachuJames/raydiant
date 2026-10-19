@@ -26,12 +26,12 @@ def trio():
     world.add(Sphere(Vec3(-4.9, 0.25, -2.8), 0.25, Metal(Vec3(0.9, 0.9, 0.9), 0.0)))
 
     camera = dict(
-        lookfrom=Vec3(0.0, 2.6, 9.6),
+        lookfrom=Vec3(0.0, 2.2, 7.8),
         lookat=Vec3(0.0, 1.0, 0.0),
         vup=Vec3(0, 1, 0),
-        vfov=42.0,
+        vfov=40.0,
         aperture=0.55,
-        focus_dist=9.8,
+        focus_dist=7.9,
     )
     return world, camera
 

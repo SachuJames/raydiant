@@ -22,8 +22,8 @@ encoder (zlib and struct, nothing else).
 
 The hero above is the `trio` scene: a checker floor, a glass sphere, a matte
 red one, and a metal one, with defocus blur softening the background. It
-rendered at 800x450 with 32 samples per pixel and a bounce depth of 20 in
-383 seconds on a 2 vCPU cloud VM, measured 2026-10-19.
+rendered at 800x450 with 128 samples per pixel and a bounce depth of 16 in
+1547 seconds on a 2 vCPU cloud VM, measured 2026-10-19.
 
 ![a field of small random spheres](renders/cover.png)
 
@@ -56,7 +56,7 @@ There is no install step. Clone it and go:
 ```
 git clone https://github.com/SachuJames/raydiant.git
 cd raydiant
-python3 -m raydiant render --scene trio --width 800 --spp 32 --depth 20 --seed 7 --jobs 2 --out renders/trio.png
+python3 -m raydiant render --scene trio --width 800 --spp 128 --depth 16 --seed 7 --jobs 2 --out renders/trio.png
 ```
 
 The `cover` scene:
